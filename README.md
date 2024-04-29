@@ -5,4 +5,4 @@ Published as an open access paper at
 
 ## Getting Started
 
-Please see [Analysis demo.md](Analysis demo.md) for the analysis script.
+Please see [Analysis_demo.md](Analysis_demo.md) for the analysis script.
