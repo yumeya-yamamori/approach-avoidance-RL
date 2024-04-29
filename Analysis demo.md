@@ -160,7 +160,7 @@ walks %>%
   labs(x = 'Trial', y = 'P(outcome)')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ------------------------------------------------------------------------
 
@@ -186,7 +186,7 @@ walks %>%
   labs(x = 'Option', y = 'Outcome probability')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ## Simple visualisations of behaviour
 
@@ -223,7 +223,7 @@ task_data %>%
   labs(x = 'Trial', y = 'Choice (upper = conflict; lower = safe)')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 ------------------------------------------------------------------------
 
@@ -245,7 +245,7 @@ task_data %>%
   labs(x = 'Mean reward', y = 'Mean punishment')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 This effect is actually stronger if we use the raw probability values to
 obtain *potential* reward and *potential* punishment, since the
@@ -269,7 +269,7 @@ task_data %>%
   labs(x = 'Mean potential reward', y = 'Mean potential punishment')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
 ## Predictors of trial-by-trial choices in the task
 
@@ -392,7 +392,7 @@ cowplot::plot_grid(
 )
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 This shows us that across trials, participants chose (i.e. approached)
 the option with relatively higher reward probability, and at the same
@@ -413,7 +413,7 @@ task_data %>%
   labs(x = 'Task-induced anxiety', y = 'Count')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
 
 ### Correlation of anxiety and choice
 
@@ -460,7 +460,7 @@ task_data %>%
   theme(aspect.ratio = 1)
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
 
 ### Anxiety and choice regression
 
@@ -552,7 +552,7 @@ log_lme_choice_anx %>%
   )
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-14-1.png)<!-- -->
 
 To understand this effect, we can see the effect of punishment
 probability on choices, by comparing across different levels of
@@ -607,7 +607,7 @@ ggarrange(
 )
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-15-1.png)<!-- -->
 
 This shows us that more anxious individuals were proportionately less
 willing to choose the conflict option during times it was likely to
@@ -678,7 +678,7 @@ list(
   cowplot::plot_grid(plotlist = ., nrow = 1)
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-16-1.png)<!-- -->
 
 ### Posterior predictive checks
 
@@ -716,7 +716,7 @@ ppc_data %>%
   labs(x = 'Trial', y = 'P(choice = conflict)')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-17-1.png)<!-- -->
 
 Each row shows the data from a participant, with trials on the x-axis,
 coloured points on the top of each plot indicating a conflict option
@@ -752,7 +752,7 @@ ppc_data %>%
   theme(legend.position = 'top')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
 
 The model (orange) nicely recapitulates the group-trends in
 approach-avoidance behaviour in the data (black) over trials!
@@ -780,7 +780,7 @@ ppc_data %>%
   coord_fixed()
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
 
 The model faithfully recovers overall biases to approach or to avoid
 across the experiment at an individual level.
@@ -813,7 +813,7 @@ params %>%
   )
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
 
 More positive values of the reward-punishment sensitivity index imply
 that the reward has a greater impact on choices relative to the
@@ -837,7 +837,7 @@ task_data %>%
   labs(x = 'Reward-punishment sensitivity index', y = 'P(choose conflict)')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
 
 ### Anxiety and parameter correlations
 
@@ -910,7 +910,7 @@ list(
   cowplot::plot_grid(plotlist = ., rel_widths = c(1, 1, 0.1), nrow = 1, axis = 'tb', align = 'vh')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
 
 ### Mediation analyses
 
@@ -1277,7 +1277,7 @@ list(
   cowplot::plot_grid(plotlist = ., nrow = 1, axis = 'tb', align = 'h')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-32-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-32-1.png)<!-- -->
 
 Task-induced anxiety had good reliability, whereas the overall
 proportion of choices showed fair reliability.
@@ -1406,4 +1406,4 @@ list(
   cowplot::plot_grid(plotlist = ., nrow = 1, axis = 'tb', align = 'h')
 ```
 
-![](For-GitHub_files/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
+![](For-Analysis_demo/figure-gfm/unnamed-chunk-35-1.png)<!-- -->
